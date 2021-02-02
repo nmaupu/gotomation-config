@@ -2,7 +2,6 @@ log_level: debug
 
 home_assistant:
   host: hass.home.fossar.net:8123
-  token: !secret hass_token
   subscribe_events:
     - state_changed
     - roku_command
@@ -17,8 +16,8 @@ crons:
 
 modules:
   - internetChecker:
-      enabled: false
-      interval: 2s
+      enabled: true
+      interval: 300s
       ping_host: 8.8.8.8
       max_reboot_every: 180s
       restart_entity: switch.living_fbx
@@ -40,7 +39,77 @@ triggers:
       trigger_events:
         - roku_command
       work_actions:
+        - key: Left
+          only_dark: true
+          commands:
+            # TV end
+            - {entity: light.poutre_dimmer, service: turn_on, brightness: 128}
+            - {entity: light.living_ball_switch, service: turn_off}
+            - {entity: light.escalier_switch, service: turn_on}
+            - {delay: 250ms}
+            - {entity: light.table_dimmer, service: turn_off}
+        - key: Right
+          only_dark: true
+          commands:
+            # Gaming
+            - {entity: light.poutre_dimmer, service: turn_off}
+            - {entity: light.living_ball_switch, service: turn_off}
+            - {entity: light.escalier_switch, service: turn_on}
+            - {delay: 250ms}
+            - {entity: light.kitchen_switch, service: turn_off}
+            - {delay: 250ms}
+            - {entity: light.table_dimmer, service: turn_off}
+            - {delay: 250ms}
+            - {entity: light.piano_switch, service: turn_off}
+            - {delay: 250ms}
+            - {entity: light.dressing_switch, service: turn_off}
+            - {delay: 250ms}
+            - {entity: light.entree_switch, service: turn_off}
+        - key: Select
+          only_dark: true
+          commands:
+            # Movies
+            - {entity: light.poutre_dimmer, service: turn_on, brightness: 25}
+            - {entity: light.living_ball_switch, service: turn_on}
+            - {entity: light.escalier_switch, service: turn_off}
+            - {delay: 250ms}
+            - {entity: light.kitchen_switch, service: turn_off}
+            - {delay: 250ms}
+            - {entity: light.table_dimmer, service: turn_off}
+            - {delay: 250ms}
+            - {entity: light.piano_switch, service: turn_off}
+            - {delay: 250ms}
+            - {entity: light.dressing_switch, service: turn_off}
+            - {delay: 250ms}
+            - {entity: light.entree_switch, service: turn_off}
         - key: Up
           commands:
-            - {entity: light.escalier_switch, service: toggle, only_dark: true}
-            - {delay: 250ms}
+            - {entity: light.escalier_switch, service: toggle}
+        - key: Down
+          commands:
+            - {entity: light.poutre_dimmer, service: toggle}
+        - key: Back
+          commands:
+            - {entity: light.living_ball_switch, service: toggle}
+        - key: Play
+          commands:
+            - {entity: light.escalier_switch, service: toggle}
+        - key: Rev
+          commands:
+            - {entity: light.poutre_dimmer, service: turn_on, brightness: 127}
+        - key: Fwd
+          commands:
+            - {entity: light.poutre_dimmer, service: turn_off}
+        - key: Search
+          commands:
+            - {entity: light.poutre_dimmer, service: turn_on, brightness: 63}
+        - key: Info
+          commands:
+            - {entity: light.poutre_dimmer, service: turn_on, brightness: 255}
+        - key: Home
+          commands:
+            - {entity: light.table_dimmer, service: turn_on, brightness: 255}
+        - key: InstantReplay
+          commands:
+            - {entity: light.table_dimmer, service: turn_off}
+
