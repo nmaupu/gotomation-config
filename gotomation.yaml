@@ -16,7 +16,7 @@ crons:
 
 modules:
   - internetChecker:
-      enabled: true
+      enabled: false
       interval: 300s
       ping_host: 8.8.8.8
       max_reboot_every: 180s
