@@ -23,6 +23,10 @@ modules:
       restart_entity: switch.living_fbx
 
 triggers:
+  - calendarLights:
+      enabled: true
+      trigger_entities:
+        - calendar.light_.*
   - dehumidifier:
       enabled: true
       trigger_entities:
