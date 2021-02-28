@@ -4,5 +4,5 @@ schedules:
   week,weekend:
     - beg: 20:05:00
       end: 20:07:00
-      confort: 21
-      eco: 18
+      confort: 22
+      eco: 19
