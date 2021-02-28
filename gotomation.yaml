@@ -25,7 +25,7 @@ modules:
       enabled: true
       interval: 1m
       schedules_file: heaters/blue.yaml
-      manual_override: input_boolean.override_heater_blue2
+      manual_override: input_boolean.override_heater_blue
       thermostat: climate.blue
 
 triggers:
