@@ -22,7 +22,7 @@ modules:
       max_reboot_every: 180s
       restart_entity: switch.living_fbx
   - heaterChecker:
-      enabled: false
+      enabled: true
       interval: 1m
       schedules_file: heaters/blue.yaml
       manual_override: input_boolean.override_heater_blue
