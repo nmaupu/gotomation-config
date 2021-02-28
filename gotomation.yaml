@@ -17,7 +17,7 @@ crons:
 modules:
   - internetChecker:
       enabled: true
-      interval: 30s
+      interval: 300s
       ping_host: 8.8.8.8
       max_reboot_every: 180s
       restart_entity: switch.living_fbx
