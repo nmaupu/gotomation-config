@@ -1,0 +1,8 @@
+default_eco: 17
+
+schedules:
+  week,weekend:
+    - beg: 19:25:00
+      end: 19:26:00
+      confort: 21
+      eco: 18
