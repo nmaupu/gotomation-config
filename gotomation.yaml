@@ -1,4 +1,4 @@
-log_level: debug
+log_level: trace
 
 home_assistant:
   host: hass.home.fossar.net:8123
