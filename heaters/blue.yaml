@@ -1,6 +1,6 @@
 manual_override: input_boolean.override_heater_blue
 thermostat: climate.blue
-default_eco: 18
+default_eco: 17
 
 schedules:
   week:
