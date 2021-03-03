@@ -13,27 +13,30 @@ crons:
     action: turn_off
     entities:
       - input_boolean.override_estrade_dehum
+      - input_boolean.override_heater_blue
 
 modules:
   - internetChecker:
+      name: internet
       enabled: true
       interval: 300s
       ping_host: 8.8.8.8
       max_reboot_every: 180s
       restart_entity: switch.living_fbx
   - heaterChecker:
-      enabled: false
+      name: blue
+      enabled: true
       interval: 1m
       schedules_file: heaters/blue.yaml
-      manual_override: input_boolean.override_heater_blue
-      thermostat: climate.blue
 
 triggers:
   - calendarLights:
+      name: calendarLights
       enabled: true
       trigger_entities:
         - calendar.light_.*
   - dehumidifier:
+      name: dehum_bedroom
       enabled: true
       trigger_entities:
         - sensor.estrade_am2301_humidity
@@ -45,6 +48,7 @@ triggers:
       threshold_max: 60
       manual_override: input_boolean.override_estrade_dehum
   - harmony:
+      name: harmony
       enabled: true
       trigger_events:
         - roku_command

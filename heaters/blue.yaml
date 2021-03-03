@@ -1,8 +1,19 @@
-default_eco: 17
+manual_override: input_boolean.override_heater_blue
+thermostat: climate.blue
+default_eco: 18
 
 schedules:
-  week,weekend:
-    - beg: 23:39:00
-      end: 23:41:00
-      confort: 25
-      eco: 20
+  week:
+    - beg: 09:45:00
+      end: 12:30:00
+      confort: 21
+      eco: 19
+    - beg: 14:00:00
+      end: 18:00:00
+      confort: 21
+      eco: 17
+  weekend:
+    - beg: 10:00:00
+      end: 22:00:00
+      confort: 18
+      eco: 17
