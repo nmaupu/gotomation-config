@@ -18,26 +18,48 @@ crons:
 modules:
   - internetChecker:
       name: internet
-      enabled: true
+      disabled: false
       interval: 300s
       ping_host: 8.8.8.8
       max_reboot_every: 180s
       restart_entity: switch.living_fbx
   - heaterChecker:
+      name: living
+      interval: 1m
+      schedules_file: heaters/living.yaml
+  - heaterChecker:
+      name: kitchen
+      interval: 1m
+      schedules_file: heaters/kitchen.yaml
+  - heaterChecker:
+      name: hall
+      interval: 1m
+      schedules_file: heaters/hall.yaml
+  - heaterChecker:
       name: blue
-      enabled: true
       interval: 1m
       schedules_file: heaters/blue.yaml
+  - heaterChecker:
+      name: bedroom
+      interval: 1m
+      schedules_file: heaters/bedroom.yaml
 
 triggers:
+  - heaterCheckersDisabler: # Globally disable heaters' programmation
+      name: heater_prog_disabler
+      temp: 17
+      trigger_entities:
+        - input_boolean.override_heater_prog
+      #checkers:
+      #  - blue
   - calendarLights:
       name: calendarLights
-      enabled: true
+      disabled: false
       trigger_entities:
         - calendar.light_.*
   - dehumidifier:
       name: dehum_bedroom
-      enabled: true
+      disabled: false
       trigger_entities:
         - sensor.estrade_am2301_humidity
         - input_boolean.override_estrade_dehum
@@ -49,7 +71,7 @@ triggers:
       manual_override: input_boolean.override_estrade_dehum
   - harmony:
       name: harmony
-      enabled: true
+      disabled: false
       trigger_events:
         - roku_command
       work_actions:
