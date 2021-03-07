@@ -13,7 +13,11 @@ crons:
     action: turn_off
     entities:
       - input_boolean.override_estrade_dehum
+      - input_boolean.override_heater_bedroom
       - input_boolean.override_heater_blue
+      - input_boolean.override_heater_hall
+      - input_boolean.override_heater_kitchen
+      - input_boolean.override_heater_living
 
 modules:
   - internetChecker:

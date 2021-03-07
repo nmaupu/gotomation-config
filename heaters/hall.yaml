@@ -4,21 +4,21 @@ default_eco: 17
 
 schedules:
   week:
-    - beg: '01:00:00'
-      end: '08:30:00'
+    - beg: 01:00:00
+      end: 08:30:00
       confort: 17
       eco: 17
-    - beg: '08:30:01'
-      end: '23:30:00'
+    - beg: 08:30:01
+      end: 23:30:00
       confort: 17
       eco: 17
 
   weekend:
-    - beg: '01:00:00'
-      end: '08:30:00'
+    - beg: 01:00:00
+      end: 08:30:00
       confort: 17
       eco: 17
-    - beg: '08:30:01'
-      end: '23:30:00'
+    - beg: 08:30:01
+      end: 23:30:00
       confort: 17
       eco: 17

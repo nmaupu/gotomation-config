@@ -4,41 +4,41 @@ default_eco: 17
 
 schedules:
   week:
-    - beg: '00:00:01'
-      end: '02:00:00'
+    - beg: 00:00:01
+      end: 02:00:00
       confort: 16
       eco: 16
-    - beg: '02:00:01'
-      end: '04:30:00'
+    - beg: 02:00:01
+      end: 04:30:00
       confort: 17
       eco: 17
-    - beg: '04:30:01'
-      end: '07:30:00'
+    - beg: 04:30:01
+      end: 07:30:00
       confort: 18
       eco: 17
-    - beg: '09:00:00'
-      end: '10:15:00'
+    - beg: 09:00:00
+      end: 10:15:00
       confort: 18
       eco: 18
-    - beg: '12:00:00'
-      end: '13:30:00'
+    - beg: 12:00:00
+      end: 13:30:00
       confort: 18
       eco: 18
-    - beg: '22:30:00'
-      end: '23:59:59'
+    - beg: 22:30:00
+      end: 23:59:59
       confort: 16
       eco: 16
 
   weekend:
-    - beg: '00:00:01'
-      end: '07:00:00'
+    - beg: 00:00:01
+      end: 07:00:00
       confort: 16
       eco: 16
-    - beg: '07:00:01'
-      end: '09:00:00'
+    - beg: 07:00:01
+      end: 09:00:00
       confort: 17
       eco: 17
-    - beg: '09:00:01'
-      end: '22:30:00'
+    - beg: 09:00:01
+      end: 22:30:00
       confort: 18
       eco: 16
