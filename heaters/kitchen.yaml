@@ -1,6 +1,6 @@
 manual_override: input_boolean.override_heater_kitchen
 thermostat: climate.kitchen
-default_eco: 17
+default_eco: 16
 
 schedules:
   week:
@@ -14,31 +14,23 @@ schedules:
       eco: 17
     - beg: 04:30:01
       end: 07:30:00
-      confort: 18
-      eco: 17
+      confort: 19
+      eco: 18
     - beg: 09:00:00
-      end: 10:15:00
-      confort: 18
+      end: 10:30:00
+      confort: 19
       eco: 18
     - beg: 12:00:00
       end: 13:30:00
-      confort: 18
+      confort: 19
       eco: 18
-    - beg: 22:30:00
-      end: 23:59:59
-      confort: 16
-      eco: 16
 
   weekend:
-    - beg: 00:00:01
-      end: 07:00:00
-      confort: 16
-      eco: 16
-    - beg: 07:00:01
-      end: 09:00:00
-      confort: 17
-      eco: 17
-    - beg: 09:00:01
+    - beg: 07:00:00
+      end: 11:00:00
+      confort: 19
+      eco: 18
+    - beg: 11:00:01
       end: 22:30:00
       confort: 18
       eco: 16

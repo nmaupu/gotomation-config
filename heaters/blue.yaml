@@ -5,13 +5,9 @@ default_eco: 17
 schedules:
   week:
     - beg: 09:45:00
-      end: 12:30:00
+      end: 20:00:00
       confort: 21
-      eco: 19
-    - beg: 14:00:00
-      end: 18:00:00
-      confort: 21
-      eco: 17
+      eco: 18
   weekend:
     - beg: 10:00:00
       end: 22:00:00

@@ -16,7 +16,7 @@ schedules:
       end: 16:24:00
       confort: 19
       eco: 19
-    - beg: 19:00:00
+    - beg: 18:00:00
       end: 23:30:00
       confort: 20.5
       eco: 18
@@ -34,21 +34,21 @@ schedules:
       end: 16:24:00
       confort: 20.5
       eco: 19
-    - beg: 15:00:00
+    - beg: 14:30:00
       end: 16:24:00
       confort: 20.5
       eco: 20
-    - beg: 19:00:00
+    - beg: 18:00:00
       end: 23:30:00
       confort: 20.5
       eco: 18
 
   weekend:
     - beg: 08:30:00
-      end: 09:29:59
+      end: 10:00:00
       confort: 18
       eco: 18
-    - beg: 10:00:00
+    - beg: 10:00:01
       end: 12:00:00
       confort: 20.5
       eco: 19

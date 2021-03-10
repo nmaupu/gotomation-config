@@ -29,11 +29,11 @@ modules:
       restart_entity: switch.living_fbx
   - heaterChecker:
       name: living
-      interval: 1m
+      interval: 10s
       schedules_file: heaters/living.yaml
   - heaterChecker:
       name: kitchen
-      interval: 1m
+      interval: 10s
       schedules_file: heaters/kitchen.yaml
   - heaterChecker:
       name: hall
@@ -41,7 +41,7 @@ modules:
       schedules_file: heaters/hall.yaml
   - heaterChecker:
       name: blue
-      interval: 1m
+      interval: 10s
       schedules_file: heaters/blue.yaml
   - heaterChecker:
       name: bedroom
