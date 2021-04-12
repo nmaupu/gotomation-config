@@ -96,8 +96,6 @@ triggers:
             - {entity: light.living_ball_switch, service: turn_off}
             - {entity: light.escalier_switch, service: turn_on}
             - {delay: 250ms}
-            - {entity: light.kitchen_switch, service: turn_off}
-            - {delay: 250ms}
             - {entity: light.table_dimmer, service: turn_off}
             - {delay: 250ms}
             - {entity: light.piano_switch, service: turn_off}
@@ -112,8 +110,6 @@ triggers:
             - {entity: light.poutre_dimmer, service: turn_on, brightness: 25}
             - {entity: light.living_ball_switch, service: turn_on}
             - {entity: light.escalier_switch, service: turn_off}
-            - {delay: 250ms}
-            - {entity: light.kitchen_switch, service: turn_off}
             - {delay: 250ms}
             - {entity: light.table_dimmer, service: turn_off}
             - {delay: 250ms}
