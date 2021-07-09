@@ -8,9 +8,9 @@ schedules:
   week,weekend:
     - beg: 01:00:00
       end: 08:30:00
-      confort: 18
+      comfort: 18
       eco: 18
     - beg: 08:30:01
       end: 23:00:00
-      confort: 19
+      comfort: 19
       eco: 17

@@ -8,57 +8,57 @@ schedules:
   monday,tuesday,thursday:
     - beg: 06:00:00
       end: 08:00:00
-      confort: 18
+      comfort: 18
       eco: 18
     - beg: 09:00:00
       end: 12:00:00
-      confort: 19
+      comfort: 19
       eco: 18
     - beg: 15:00:00
       end: 16:24:00
-      confort: 19
+      comfort: 19
       eco: 19
     - beg: 18:00:00
       end: 23:30:00
-      confort: 20.5
+      comfort: 20.5
       eco: 18
 
   wednesday,friday:
     - beg: 06:00:00
       end: 08:00:00
-      confort: 18
+      comfort: 18
       eco: 18
     - beg: 09:00:00
       end: 11:30:00
-      confort: 19
+      comfort: 19
       eco: 18
     - beg: 12:30:00
       end: 16:24:00
-      confort: 20.5
+      comfort: 20.5
       eco: 19
     - beg: 14:30:00
       end: 16:24:00
-      confort: 20.5
+      comfort: 20.5
       eco: 20
     - beg: 18:00:00
       end: 23:30:00
-      confort: 20.5
+      comfort: 20.5
       eco: 18
 
   weekend:
     - beg: 08:30:00
       end: 10:00:00
-      confort: 18
+      comfort: 18
       eco: 18
     - beg: 10:00:01
       end: 12:00:00
-      confort: 20.5
+      comfort: 20.5
       eco: 19
     - beg: 14:30:00
       end: 16:24:00
-      confort: 20.5
+      comfort: 20.5
       eco: 20
     - beg: 19:00:00
       end: 23:30:00
-      confort: 20.5
+      comfort: 20.5
       eco: 18

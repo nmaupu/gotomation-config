@@ -8,31 +8,31 @@ schedules:
   week:
     - beg: 00:00:01
       end: 02:00:00
-      confort: 16
+      comfort: 16
       eco: 16
     - beg: 02:00:01
       end: 04:30:00
-      confort: 17
+      comfort: 17
       eco: 17
     - beg: 04:30:01
       end: 07:30:00
-      confort: 19
+      comfort: 19
       eco: 18
     - beg: 09:00:00
       end: 10:30:00
-      confort: 19
+      comfort: 19
       eco: 18
     - beg: 12:00:00
       end: 13:30:00
-      confort: 19
+      comfort: 19
       eco: 18
 
   weekend:
     - beg: 07:00:00
       end: 11:00:00
-      confort: 19
+      comfort: 19
       eco: 18
     - beg: 11:00:01
       end: 22:30:00
-      confort: 18
+      comfort: 18
       eco: 16
