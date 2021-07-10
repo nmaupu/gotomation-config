@@ -53,6 +53,30 @@ modules:
       schedules_file: heaters/bedroom.yaml
 
 triggers:
+  - randomLights:
+      name: randomLights
+      trigger_entities:
+        - input_boolean.random_lights
+      nb_slots: 3
+      time_end: 00:45:00
+      odds: 5
+      refresh_every: 1m
+      lights:
+        - entity: light.poutre_dimmer
+          min_duration: 30m
+          max_duration: 2h
+        - entity: light.escalier_switch
+          min_duration: 15m
+          max_duration: 2h
+        - entity: light.dressing_switch
+          min_duration: 15m
+          max_duration: 1h
+        - entity: light.piano_switch
+          min_duration: 15m
+          max_duration: 1h
+        - entity: light.living_ball_switch
+          min_duration: 30m
+          max_duration: 2h
   - heaterCheckersDisabler: # Globally disable heaters' programmation
       name: heater_prog_disabler
       temp: 17
