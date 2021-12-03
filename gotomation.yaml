@@ -19,6 +19,7 @@ crons:
       - input_boolean.override_estrade_dehum
       - input_boolean.override_heater_bedroom
       - input_boolean.override_heater_blue
+      - input_boolean.override_heater_pink
       - input_boolean.override_heater_hall
       - input_boolean.override_heater_kitchen
       - input_boolean.override_heater_living
@@ -47,6 +48,10 @@ modules:
       name: blue
       interval: 10s
       schedules_file: heaters/blue.yaml
+  - heaterChecker:
+      name: pink
+      interval: 10s
+      schedules_file: heaters/pink.yaml
   - heaterChecker:
       name: bedroom
       interval: 1m
