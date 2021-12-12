@@ -58,6 +58,21 @@ modules:
       schedules_file: heaters/bedroom.yaml
 
 triggers:
+  - alert:
+      trigger_entities:
+        - binary_sensor.basement_leak_water_leak
+      sender: telegram
+      templates:
+        binary_sensor.basement_leak_water_leak:
+          bool_attr_key: water_leak
+          msg_template: |-
+            {{- if not (eq .Event.NewState.Attributes.water_leak .Event.OldState.Attributes.water_leak) }}
+              {{- if .Event.NewState.Attributes.water_leak }}
+              ⚠ Dehumidifier full !
+              {{- else }}
+              Dehumidifier empty 👍 !
+              {{- end }}
+            {{- end }}
   - randomLights:
       name: randomLights
       trigger_entities:
