@@ -68,9 +68,9 @@ triggers:
           msg_template: |-
             {{- if not (eq .Event.NewState.Attributes.water_leak .Event.OldState.Attributes.water_leak) }}
               {{- if .Event.NewState.Attributes.water_leak }}
-              ⚠ Dehumidifier full !
+              ⚠ Le déshumidificateur est plein !
               {{- else }}
-              Dehumidifier empty 👍 !
+              Le déshumidificateur a été vidé 👍 !
               {{- end }}
             {{- end }}
   - randomLights:
