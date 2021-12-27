@@ -57,7 +57,7 @@ modules:
       interval: 1m
       schedules_file: heaters/bedroom.yaml
   - freshnessChecker:
-      name: Zigbee temp sensors
+      name: zigbee_temp_sensors
       interval: 30m
       freshness: 60m
       sender: telegram
@@ -74,7 +74,7 @@ modules:
         Les sensors Zigbee suivants n'ont pas donné de nouvelles depuis plus de {{ .Checker.Freshness }}:
         {{ JoinEntities .Entities "\n" "_last_seen" }}
   - freshnessChecker:
-      name: Zigbee dehum water sensor
+      name: zigbee_dehum_water_sensor
       interval: 60m
       freshness: 120m
       sender: telegram
