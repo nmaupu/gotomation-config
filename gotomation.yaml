@@ -87,6 +87,10 @@ triggers:
   - alert:
       trigger_entities:
         - binary_sensor.dehumidifier_water_sensor_water_leak
+      sender: statusled
+  - alert:
+      trigger_entities:
+        - binary_sensor.dehumidifier_water_sensor_water_leak
       sender: telegram
       templates:
         binary_sensor.dehumidifier_water_sensor_water_leak:
