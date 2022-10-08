@@ -59,7 +59,7 @@ modules:
   - freshnessChecker:
       name: zigbee_temp_sensors
       interval: 30m
-      freshness: 90m
+      freshness: 150m
       sender: telegram
       entities:
         - sensor.basement_main_hum_temp_last_seen
@@ -76,7 +76,7 @@ modules:
   - freshnessChecker:
       name: zigbee_dehum_water_sensor
       interval: 60m
-      freshness: 120m
+      freshness: 240m
       sender: telegram
       entities:
         - sensor.dehumidifier_water_sensor_last_seen
