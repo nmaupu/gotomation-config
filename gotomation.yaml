@@ -147,8 +147,8 @@ triggers:
       switch_entity: switch.estrade_relay
       time_beg: 10:00:00
       time_end: 21:30:00
-      threshold_min: 49
-      threshold_max: 60
+      threshold_min: 50
+      threshold_max: 70
       manual_override: input_boolean.override_estrade_dehum
   - harmony:
       name: harmony
