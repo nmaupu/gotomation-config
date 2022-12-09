@@ -5,22 +5,27 @@ date_begin: 01/10
 date_end: 01/06
 
 schedules:
-  week:
+  monday,tuesday,wednesday,thursday:
+    - beg: 05:30:00
+      end: 08:00:00
+      comfort: 19
+      eco: 18
+    - beg: 21:00:00
+      end: 23:30:00
+      comfort: 19
+      eco: 18
+  friday:
+    - beg: 05:30:00
+      end: 08:00:00
+      comfort: 19
+      eco: 17
+  saturday:
     - beg: 00:00:01
-      end: 02:00:00
-      comfort: 19
-      eco: 18
-    - beg: 22:30:00
       end: 23:59:59
-      comfort: 19
-      eco: 18
-
-  weekend:
-    - beg: 00:00:01
-      end: 02:00:00
-      comfort: 19
-      eco: 18
-    - beg: 22:30:00
-      end: 23:59:59
+      comfort: 17
+      eco: 17
+  sunday:
+    - beg: 21:00:00
+      end: 23:30:00
       comfort: 19
       eco: 18
