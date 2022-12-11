@@ -215,7 +215,7 @@ triggers:
             - {entity: light.poutre_dimmer, service: turn_off}
         - key: Search
           commands:
-            - {entity: light.poutre_dimmer, service: turn_on, brightness: 63}
+            - {entity: light.poutre_dimmer, service: turn_on, brightness: 34}
         - key: Info
           commands:
             - {entity: light.poutre_dimmer, service: turn_on, brightness: 255}
