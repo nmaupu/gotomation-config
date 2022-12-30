@@ -18,14 +18,26 @@ schedules:
     - beg: 05:30:00
       end: 08:00:00
       comfort: 19
-      eco: 17
+      eco: 18
+    - beg: 18:00:00
+      end: 22:00:00
+      comfort: 19
+      eco: 18
   saturday:
-    - beg: 00:00:01
-      end: 23:59:59
-      comfort: 17
-      eco: 17
+    - beg: 05:30:00
+      end: 08:00:00
+      comfort: 19
+      eco: 18
+    - beg: 18:00:00
+      end: 22:00:00
+      comfort: 19
+      eco: 18
   sunday:
-    - beg: 17:00:00
+    - beg: 05:30:00
+      end: 08:00:00
+      comfort: 19
+      eco: 18
+    - beg: 18:00:00
       end: 22:00:00
       comfort: 19
       eco: 18
