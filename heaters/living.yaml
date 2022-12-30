@@ -11,7 +11,7 @@ schedules:
       comfort: 20
       eco: 18
     - beg: 16:00:00
-      end: 23:00:00
+      end: 23:30:00
       comfort: 20
       eco: 17
   friday:
@@ -20,7 +20,7 @@ schedules:
       comfort: 20
       eco: 18
     - beg: 16:00:00
-      end: 23:00:00
+      end: 23:30:00
       comfort: 20
       eco: 17
   saturday:
@@ -29,7 +29,7 @@ schedules:
       comfort: 20
       eco: 18
     - beg: 16:00:00
-      end: 23:00:00
+      end: 23:30:00
       comfort: 20
       eco: 17
   sunday:
@@ -38,6 +38,6 @@ schedules:
       comfort: 20
       eco: 18
     - beg: 16:00:00
-      end: 23:00:00
+      end: 23:30:00
       comfort: 20
       eco: 17
