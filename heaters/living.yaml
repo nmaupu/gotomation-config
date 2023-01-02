@@ -8,16 +8,16 @@ schedules:
   monday,tuesday,wednesday,thursday:
     - beg: 04:30:00
       end: 08:00:00
-      comfort: 20
+      comfort: 21
       eco: 18
     - beg: 16:00:00
       end: 23:30:00
-      comfort: 20
+      comfort: 21
       eco: 17
   friday:
     - beg: 04:30:00
       end: 08:00:00
-      comfort: 20
+      comfort: 21
       eco: 18
     - beg: 16:00:00
       end: 23:30:00
