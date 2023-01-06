@@ -7,37 +7,37 @@ date_end: 01/06
 schedules:
   monday,tuesday,wednesday,thursday:
     - beg: 05:30:00
-      end: 08:00:00
-      comfort: 19
+      end: 09:00:00
+      comfort: 21
       eco: 18
-    - beg: 21:00:00
+    - beg: 20:00:00
       end: 23:59:00
-      comfort: 19
-      eco: 18
+      comfort: 21
+      eco: 20
   friday:
     - beg: 05:30:00
-      end: 08:00:00
-      comfort: 19
+      end: 09:00:00
+      comfort: 21
       eco: 18
-    - beg: 21:00:00
+    - beg: 20:00:00
       end: 23:59:00
-      comfort: 19
-      eco: 18
+      comfort: 21
+      eco: 20
   saturday:
     - beg: 05:30:00
-      end: 08:00:00
-      comfort: 19
+      end: 09:00:00
+      comfort: 21
       eco: 18
-    - beg: 21:00:00
+    - beg: 20:00:00
       end: 23:59:00
-      comfort: 19
-      eco: 18
+      comfort: 21
+      eco: 20
   sunday:
     - beg: 05:30:00
-      end: 08:00:00
-      comfort: 19
+      end: 09:00:00
+      comfort: 21
       eco: 18
-    - beg: 21:00:00
+    - beg: 20:00:00
       end: 23:59:00
-      comfort: 19
-      eco: 18
+      comfort: 21
+      eco: 20
