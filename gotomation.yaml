@@ -82,6 +82,34 @@ modules:
         - sensor.dehumidifier_water_sensor_last_seen
       template: |
         Pas de nouvelle depuis plus de {{ .Checker.Freshness }} du water sensor pour le déshumidificateur !
+  - temperatureChecker:
+      interval: 300s
+      sender: telegram
+      sensors:
+        - entity: sensor.basement_bedroom_hum_temp_temperature
+          temp_threshold: 24
+        - entity: sensor.basement_cave_hum_temp_temperature
+          temp_threshold: 24
+        - entity: sensor.basement_main_hum_temp_temperature
+          temp_threshold: 24
+        - entity: sensor.bedroom_hum_temp_temperature
+          temp_threshold: 24
+        - entity: sensor.blue_hum_temp_temperature
+          temp_threshold: 24
+        - entity: sensor.hall_hum_temp_temperature
+          temp_threshold: 23
+        - entity: sensor.kitchen_hum_temp_temperature
+          temp_threshold: 23
+        - entity: sensor.living_hum_temp_temperature
+          temp_threshold: 23
+        - entity: sensor.pink_hum_temp_temperature
+          temp_threshold: 24
+      date_begin: 01/10
+      date_end: 15/05
+      send_message_interval: 12h
+      template: |
+        Les sensors suivants ont une température excédant la limite:
+        {{ JoinEntities .Entities "\n" "_hum_temp_temperature"}}
 
 triggers:
   - alert:
