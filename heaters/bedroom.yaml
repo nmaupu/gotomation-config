@@ -10,34 +10,34 @@ schedules:
       end: 09:00:00
       comfort: 21
       eco: 18
-    - beg: 20:00:00
+    - beg: 19:00:00
       end: 23:59:00
-      comfort: 21
+      comfort: 21.5
       eco: 20
   friday:
     - beg: 05:30:00
       end: 09:00:00
       comfort: 21
       eco: 18
-    - beg: 20:00:00
+    - beg: 19:00:00
       end: 23:59:00
-      comfort: 21
+      comfort: 21.5
       eco: 20
   saturday:
     - beg: 05:30:00
       end: 09:00:00
       comfort: 21
       eco: 18
-    - beg: 20:00:00
+    - beg: 19:00:00
       end: 23:59:00
-      comfort: 21
+      comfort: 21.5
       eco: 20
   sunday:
     - beg: 05:30:00
       end: 09:00:00
       comfort: 21
       eco: 18
-    - beg: 20:00:00
+    - beg: 19:00:00
       end: 23:59:00
-      comfort: 21
+      comfort: 21.5
       eco: 20
