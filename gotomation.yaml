@@ -73,15 +73,15 @@ modules:
       template: |
         Les sensors Zigbee suivants n'ont pas donné de nouvelles depuis plus de {{ .Checker.Freshness }}:
         {{ JoinEntities .Entities "\n" "_last_seen" }}
-  - freshnessChecker:
-      name: zigbee_dehum_water_sensor
-      interval: 60m
-      freshness: 240m
-      sender: telegram
-      entities:
-        - sensor.dehumidifier_water_sensor_last_seen
-      template: |
-        Pas de nouvelle depuis plus de {{ .Checker.Freshness }} du water sensor pour le déshumidificateur !
+  #- freshnessChecker:
+  #    name: zigbee_dehum_water_sensor
+  #    interval: 60m
+  #    freshness: 240m
+  #    sender: telegram
+  #    entities:
+  #      - sensor.dehumidifier_water_sensor_last_seen
+  #    template: |
+  #      Pas de nouvelle depuis plus de {{ .Checker.Freshness }} du water sensor pour le déshumidificateur !
   - temperatureChecker:
       interval: 300s
       sender: telegram
