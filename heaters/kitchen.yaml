@@ -13,11 +13,11 @@ schedules:
     - beg: 04:30:01
       end: 07:30:00
       comfort: 19
-      eco: 18
+      eco: 16
     - beg: 09:00:00
       end: 10:00:00
       comfort: 19
-      eco: 18
+      eco: 16
     - beg: 21:00:00
       end: 23:59:59
       comfort: 16
@@ -30,7 +30,7 @@ schedules:
     - beg: 07:30:01
       end: 10:00:00
       comfort: 19
-      eco: 18
+      eco: 16
     - beg: 21:00:00
       end: 23:59:59
       comfort: 16
@@ -43,11 +43,11 @@ schedules:
     - beg: 04:30:01
       end: 07:30:00
       comfort: 19
-      eco: 18
+      eco: 16
     - beg: 09:00:00
       end: 10:00:00
       comfort: 19
-      eco: 18
+      eco: 16
     - beg: 21:00:00
       end: 23:59:59
       comfort: 16
