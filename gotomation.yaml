@@ -40,10 +40,10 @@ modules:
       name: kitchen
       interval: 10s
       schedules_file: heaters/kitchen.yaml
-  - heaterChecker:
-      name: hall
-      interval: 1m
-      schedules_file: heaters/hall.yaml
+  #- heaterChecker:
+  #    name: hall
+  #    interval: 1m
+  #    schedules_file: heaters/hall.yaml
   - heaterChecker:
       name: blue
       interval: 10s
