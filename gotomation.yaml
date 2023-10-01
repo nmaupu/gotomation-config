@@ -104,7 +104,7 @@ modules:
           temp_threshold: 23
         - entity: sensor.pink_hum_temp_temperature
           temp_threshold: 24
-      date_begin: 01/10
+      date_begin: 15/10
       date_end: 15/05
       send_message_interval: 12h
       template: |
