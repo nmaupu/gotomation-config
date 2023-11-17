@@ -70,6 +70,7 @@ modules:
         - sensor.living_hum_temp_last_seen
         - sensor.outside_hum_temp_last_seen
         - sensor.pink_hum_temp_last_seen
+        - sensor.dehumidifier_water_sensor_last_seen
       template: |
         Les sensors Zigbee suivants n'ont pas donné de nouvelles depuis plus de {{ .Checker.Freshness }}:
         {{ JoinEntities .Entities "\n" "_last_seen" }}
