@@ -157,7 +157,7 @@ triggers:
           max_duration: 2h
   - heaterCheckersDisabler: # Globally disable heaters' programmation
       name: heater_prog_disabler
-      temp: 17
+      temp: 17.5
       trigger_entities:
         - input_boolean.override_heater_prog
       #checkers:
