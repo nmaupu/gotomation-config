@@ -6,7 +6,7 @@ date_end: 01/06
 
 schedules:
   week:
-    - beg: 00:00:02
+    - beg: 00:00:01
       end: 02:00:00
       comfort: 19
       eco: 18
