@@ -1,7 +1,7 @@
 log_level: debug
 
 home_assistant:
-  host: hass.home.fossar.net:8123
+  host: hass.home.fossar.net
   tls_enabled: true
   health_check_entities:
     - light.escalier_switch
@@ -171,7 +171,7 @@ triggers:
       name: dehum_bedroom
       disabled: false
       trigger_entities:
-        - sensor.dehum_bedroom_am2301_humidity 
+        - sensor.dehum_bedroom_am2301_humidity
         - input_boolean.override_estrade_dehum
       switch_entity: switch.estrade_relay
       time_beg: 10:00:00
@@ -254,4 +254,3 @@ triggers:
         - key: InstantReplay
           commands:
             - {entity: light.table_dimmer, service: turn_off}
-
