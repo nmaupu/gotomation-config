@@ -171,7 +171,7 @@ triggers:
       name: dehum_bedroom
       disabled: false
       trigger_entities:
-        - sensor.dehum_bedroom_am2301_humidity
+        - sensor.estrade_am2301_humidity
         - input_boolean.override_estrade_dehum
       switch_entity: switch.estrade_relay
       time_beg: 10:00:00
