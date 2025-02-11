@@ -86,14 +86,14 @@ modules:
       freshness: 150m
       sender: telegram
       entities:
-        - sensor.basement_main_hum_temp_last_seen
-        - sensor.bedroom_hum_temp_last_seen
-        - sensor.blue_hum_temp_last_seen
-        - sensor.hall_hum_temp_last_seen
-        - sensor.kitchen_hum_temp_last_seen
-        - sensor.living_hum_temp_last_seen
+        - sensor.z03mmc_basement_main_hum_temp_last_seen
+        - sensor.z03mmc_bedroom_hum_temp_last_seen
+        - sensor.z03mmc_blue_hum_temp_last_seen
+        - sensor.z03mmc_hall_hum_temp_last_seen
+        - sensor.z03mmc_kitchen_hum_temp_last_seen
+        - sensor.z03mmc_living_hum_temp_last_seen
+        - sensor.z03mmc_pink_hum_temp_last_seen
         - sensor.outside_hum_temp_last_seen
-        - sensor.pink_hum_temp_last_seen
         - sensor.dehumidifier_water_sensor_last_seen
       template: |
         Les sensors Zigbee suivants n'ont pas donné de nouvelles depuis plus de {{ .Checker.Freshness }}:
