@@ -58,19 +58,24 @@ modules:
       schedules_file: heaters/bedroom.yaml
   - freshnessChecker:
       name: zigbee_temp_sensors
-      interval: 30m
-      freshness: 150m
+      interval: 60m
+      freshness: 12h
       sender: telegram
       entities:
+        - sensor.dehumidifier_water_sensor_last_seen
+        - sensor.kitchen_fridge_up_hum_temp_last_seen
+        - sensor.outside_hum_temp_last_seen
+        - sensor.z03mmc_basement_bedroom_hum_temp_last_seen
+        - sensor.z03mmc_basement_cave_hum_temp_last_seen
         - sensor.z03mmc_basement_main_hum_temp_last_seen
         - sensor.z03mmc_bedroom_hum_temp_last_seen
         - sensor.z03mmc_blue_hum_temp_last_seen
         - sensor.z03mmc_hall_hum_temp_last_seen
+        - sensor.z03mmc_kitchen_fridge_down_hum_temp_last_seen
         - sensor.z03mmc_kitchen_hum_temp_last_seen
         - sensor.z03mmc_living_hum_temp_last_seen
+        - sensor.z03mmc_networkbox_hum_temp_last_seen
         - sensor.z03mmc_pink_hum_temp_last_seen
-        - sensor.outside_hum_temp_last_seen
-        - sensor.dehumidifier_water_sensor_last_seen
       template: |
         Les sensors Zigbee suivants n'ont pas donné de nouvelles depuis plus de {{ .Checker.Freshness }}:
         {{ JoinEntities .Entities "\n" "_last_seen" }}
@@ -87,6 +92,10 @@ modules:
       interval: 300s
       sender: telegram
       sensors:
+        - entity: sensor.kitchen_fridge_up_hum_temp_temperature
+          temp_threshold: 11
+        - entity: sensor.outside_hum_temp_temperature
+          temp_threshold: 38
         - entity: sensor.z03mmc_basement_bedroom_hum_temp_temperature
           temp_threshold: 24
         - entity: sensor.z03mmc_basement_cave_hum_temp_temperature
@@ -99,10 +108,14 @@ modules:
           temp_threshold: 24
         - entity: sensor.z03mmc_hall_hum_temp_temperature
           temp_threshold: 23
+        - entity: sensor.z03mmc_kitchen_fridge_down_hum_temp_temperature
+          temp_threshold: 8
         - entity: sensor.z03mmc_kitchen_hum_temp_temperature
           temp_threshold: 23
         - entity: sensor.z03mmc_living_hum_temp_temperature
           temp_threshold: 23
+        - entity: sensor.z03mmc_networkbox_hum_temp_temperature
+          temp_threshold: 30
         - entity: sensor.z03mmc_pink_hum_temp_temperature
           temp_threshold: 24
       date_begin: 15/10
