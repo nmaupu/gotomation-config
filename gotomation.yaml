@@ -58,8 +58,8 @@ modules:
       schedules_file: heaters/bedroom.yaml
   - freshnessChecker:
       name: zigbee_temp_sensors
-      interval: 60m
-      freshness: 12h
+      interval: 12h
+      freshness: 6h
       sender: telegram
       entities:
         - sensor.dehumidifier_water_sensor_last_seen
