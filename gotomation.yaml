@@ -109,7 +109,7 @@ modules:
         - entity: sensor.z03mmc_hall_hum_temp_temperature
           temp_threshold: 23
         - entity: sensor.z03mmc_kitchen_fridge_down_hum_temp_temperature
-          temp_threshold: 8
+          temp_threshold: 9
         - entity: sensor.z03mmc_kitchen_hum_temp_temperature
           temp_threshold: 23
         - entity: sensor.z03mmc_living_hum_temp_temperature
