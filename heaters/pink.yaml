@@ -1,5 +1,9 @@
 manual_override: input_boolean.override_heater_pink
 thermostat: climate.pink
+last_seen:
+  enabled: true
+  entity: sensor.z03mmc_pink_hum_temp_last_seen
+  offline_after: 1h
 default_eco: 17
 date_begin: 24/09
 date_end: 01/06
