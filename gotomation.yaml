@@ -67,7 +67,6 @@ modules:
         - sensor.outside_hum_temp_last_seen
         - sensor.z03mmc_basement_bedroom_hum_temp_last_seen
         - sensor.z03mmc_basement_cave_hum_temp_last_seen
-        - sensor.z03mmc_basement_main_hum_temp_last_seen
         - sensor.z03mmc_bedroom_hum_temp_last_seen
         - sensor.z03mmc_blue_hum_temp_last_seen
         - sensor.z03mmc_hall_hum_temp_last_seen
