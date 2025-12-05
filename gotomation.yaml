@@ -1,6 +1,7 @@
 log_level: debug
 
 home_assistant:
+  enabled: true
   host: hass.home.fossar.net
   tls_enabled: true
   health_check_entities:
