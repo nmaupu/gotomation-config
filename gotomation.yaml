@@ -135,10 +135,10 @@ modules:
       blacklist: []
       whitelist:
         - gateway: OMG_living
-          macs:
-            - A4:C1:38:EC:25:33
-        - gateway: OMG_basement
           macs: []
+        - gateway: OMG_ESP32_BLE
+          macs: 
+            - A4:C1:38:EC:25:33
 
 triggers:
   - alert:
