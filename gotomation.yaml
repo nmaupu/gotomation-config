@@ -11,6 +11,11 @@ home_assistant:
     - roku_command
   home_zone_name: home # Get latitude and longitude from configured zone
 
+open_mqtt_gateway:
+  mqtt:
+    broker: tcp://mqtt:1883
+    topicPrefix: home
+
 # This uses github.com/robfig/cron
 crons:
   - expr: 0 1 * * *
@@ -123,6 +128,16 @@ modules:
       template: |
         Les sensors suivants ont une température excédant la limite:
         {{ JoinEntities .Entities "\n" "_hum_temp_temperature"}}
+  - OpenMQTTGatewayWBListChecker:
+      enabled: true
+      interval: 2h
+      blacklist: []
+      whitelist:
+        - gateway: OMG_living
+          macs:
+            - A4:C1:38:EC:25:33
+        - gateway: OMG_basement
+          macs: []
 
 triggers:
   - alert:
