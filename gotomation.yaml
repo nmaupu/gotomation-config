@@ -135,7 +135,8 @@ modules:
       blacklist: []
       whitelist:
         - gateway: OMG_living
-          macs: []
+          macs:
+            - A4:C1:38:58:57:8D # networkbox
         - gateway: OMG_hall
           macs:
             - A4:C1:38:EC:25:33 # blue
