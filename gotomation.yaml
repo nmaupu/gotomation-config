@@ -136,9 +136,9 @@ modules:
       whitelist:
         - gateway: OMG_living
           macs: []
-        - gateway: OMG_ESP32_BLE
+        - gateway: OMG_hall
           macs:
-            - A4:C1:38:EC:25:33
+            - A4:C1:38:EC:25:33 # blue
 
 triggers:
   - alert:
