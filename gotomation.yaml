@@ -160,8 +160,8 @@ triggers:
       templates:
         binary_sensor.dehumidifier_water_sensor_water_leak:
           msg_template: |-
-            {{- if not (eq (GetOldStateAttrAsBool .Event "water_leak") (GetNewStateAttrAsBool .Event "water_leak")) }}
-              {{- if GetNewStateAttrAsBool .Event "water_leak" }}
+            {{- if IsStateChanged .Event }}
+              {{- if IsWet .Event }}
               ⚠ Le déshumidificateur est plein !
               {{- else }}
               Le déshumidificateur a été vidé 👍 !
