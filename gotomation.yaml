@@ -71,6 +71,7 @@ modules:
       entities:
         - sensor.atc_networkbox_temp
         - sensor.atc_blue_temp
+        - sensor.atc_pink_temp
   - freshnessChecker:
       name: zigbee_temp_sensors
       interval: 12h
@@ -87,7 +88,6 @@ modules:
         - sensor.z03mmc_kitchen_fridge_down_hum_temp_last_seen
         - sensor.z03mmc_kitchen_hum_temp_last_seen
         - sensor.z03mmc_living_hum_temp_last_seen
-        - sensor.z03mmc_pink_hum_temp_last_seen
       template: |
         Les sensors Zigbee suivants n'ont pas donné de nouvelles depuis plus de {{ .Checker.Freshness }}:
         {{ JoinEntities .Entities "\n" "_last_seen" }}
@@ -128,7 +128,7 @@ modules:
           temp_threshold: 23
         - entity: sensor.atc_networkbox_temp
           temp_threshold: 36
-        - entity: sensor.z03mmc_pink_hum_temp_temperature
+        - entity: sensor.atc_pink_temp
           temp_threshold: 24
       date_begin: 15/10
       date_end: 01/05
@@ -148,6 +148,7 @@ modules:
           macs:
             - A4:C1:38:EC:25:33 # test
             - A4:C1:38:C3:A0:50 # blue
+            - A4:C1:38:DB:BC:6F # pink
 
 triggers:
   - alert:
