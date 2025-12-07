@@ -73,6 +73,7 @@ modules:
         - sensor.atc_blue_temp
         - sensor.atc_pink_temp
         - sensor.atc_basement_bdr
+        - sensor.atc_basement_cave
   - freshnessChecker:
       name: zigbee_temp_sensors
       interval: 12h
@@ -82,7 +83,6 @@ modules:
         - sensor.dehumidifier_water_sensor_last_seen
         - sensor.kitchen_fridge_up_hum_temp_last_seen
         - sensor.outside_hum_temp_last_seen
-        - sensor.z03mmc_basement_cave_hum_temp_last_seen
         - sensor.z03mmc_bedroom_hum_temp_last_seen
         - sensor.z03mmc_hall_hum_temp_last_seen
         - sensor.z03mmc_kitchen_fridge_down_hum_temp_last_seen
@@ -110,7 +110,7 @@ modules:
           temp_threshold: 38
         - entity: sensor.atc_basement_bdr_temp
           temp_threshold: 24
-        - entity: sensor.z03mmc_basement_cave_hum_temp_temperature
+        - entity: sensor.atc_basement_cave_temp
           temp_threshold: 24
         - entity: sensor.z03mmc_basement_main_hum_temp_temperature
           temp_threshold: 24
@@ -150,6 +150,7 @@ modules:
             - A4:C1:38:C3:A0:50 # blue
             - A4:C1:38:DB:BC:6F # pink
             - A4:C1:38:8E:3C:AE # basement_bdr
+            - A4:C1:38:00:C6:9D # basement_cave
 
 triggers:
   - alert:
