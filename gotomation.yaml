@@ -63,6 +63,14 @@ modules:
       interval: 5s
       schedules_file: heaters/bedroom.yaml
   - freshnessChecker:
+      name: atc_temp_sensors
+      interval: 12h
+      freshness: 6h
+      sender: telegram
+      read_from_last_reported: true
+      entities:
+        - sensor.atc_networkbox_temp
+  - freshnessChecker:
       name: zigbee_temp_sensors
       interval: 12h
       freshness: 6h
@@ -79,7 +87,6 @@ modules:
         - sensor.z03mmc_kitchen_fridge_down_hum_temp_last_seen
         - sensor.z03mmc_kitchen_hum_temp_last_seen
         - sensor.z03mmc_living_hum_temp_last_seen
-        - sensor.z03mmc_networkbox_hum_temp_last_seen
         - sensor.z03mmc_pink_hum_temp_last_seen
       template: |
         Les sensors Zigbee suivants n'ont pas donné de nouvelles depuis plus de {{ .Checker.Freshness }}:
@@ -119,7 +126,7 @@ modules:
           temp_threshold: 23
         - entity: sensor.z03mmc_living_hum_temp_temperature
           temp_threshold: 23
-        - entity: sensor.z03mmc_networkbox_hum_temp_temperature
+        - entity: sensor.atc_networkbox_temp
           temp_threshold: 36
         - entity: sensor.z03mmc_pink_hum_temp_temperature
           temp_threshold: 24
