@@ -2,7 +2,8 @@ manual_override: input_boolean.override_heater_blue
 thermostat: climate.blue
 last_seen:
   enabled: true
-  entity: sensor.z03mmc_blue_hum_temp_last_seen
+  read_from_last_reported: true
+  entity: sensor.atc_blue_temp
   offline_after: 1h
 default_eco: 17
 date_begin: 24/09
