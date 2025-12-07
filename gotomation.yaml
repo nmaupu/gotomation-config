@@ -146,7 +146,8 @@ modules:
             - A4:C1:38:58:57:8D # networkbox
         - gateway: OMG_hall
           macs:
-            - A4:C1:38:EC:25:33 # blue
+            - A4:C1:38:EC:25:33 # test
+            - A4:C1:38:C3:A0:50 # blue
 
 triggers:
   - alert:
