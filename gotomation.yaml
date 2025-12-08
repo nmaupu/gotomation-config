@@ -72,8 +72,10 @@ modules:
         - sensor.atc_networkbox_temp
         - sensor.atc_blue_temp
         - sensor.atc_pink_temp
-        - sensor.atc_basement_bdr
-        - sensor.atc_basement_cave
+        - sensor.atc_basement_bdr_temp
+        - sensor.atc_basement_cave_temp
+        - sensor.atc_hall_temp
+        - sensor.atc_bedroom_temp
   - freshnessChecker:
       name: zigbee_temp_sensors
       interval: 12h
@@ -83,8 +85,6 @@ modules:
         - sensor.dehumidifier_water_sensor_last_seen
         - sensor.kitchen_fridge_up_hum_temp_last_seen
         - sensor.outside_hum_temp_last_seen
-        - sensor.z03mmc_bedroom_hum_temp_last_seen
-        - sensor.z03mmc_hall_hum_temp_last_seen
         - sensor.z03mmc_kitchen_fridge_down_hum_temp_last_seen
         - sensor.z03mmc_kitchen_hum_temp_last_seen
         - sensor.z03mmc_living_hum_temp_last_seen
@@ -114,11 +114,11 @@ modules:
           temp_threshold: 24
         - entity: sensor.z03mmc_basement_main_hum_temp_temperature
           temp_threshold: 24
-        - entity: sensor.z03mmc_bedroom_hum_temp_temperature
+        - entity: sensor.atc_bedroom_temp
           temp_threshold: 24
         - entity: sensor.atc_blue_temp
           temp_threshold: 24
-        - entity: sensor.z03mmc_hall_hum_temp_temperature
+        - entity: sensor.atc_hall_temp
           temp_threshold: 23
         - entity: sensor.z03mmc_kitchen_fridge_down_hum_temp_temperature
           temp_threshold: 9
@@ -143,14 +143,16 @@ modules:
       whitelist:
         - gateway: OMG_living
           macs:
-            - A4:C1:38:58:57:8D # networkbox
+            - A4:C1:38:58:57:8D # atc_networkbox
         - gateway: OMG_hall
           macs:
-            - A4:C1:38:EC:25:33 # test
-            - A4:C1:38:C3:A0:50 # blue
-            - A4:C1:38:DB:BC:6F # pink
-            - A4:C1:38:8E:3C:AE # basement_bdr
-            - A4:C1:38:00:C6:9D # basement_cave
+            - A4:C1:38:EC:25:33 # atc_test
+            - A4:C1:38:C3:A0:50 # atc_blue
+            - A4:C1:38:DB:BC:6F # atc_pink
+            - A4:C1:38:8E:3C:AE # atc_basement_bdr
+            - A4:C1:38:00:C6:9D # atc_basement_cave
+            - A4:C1:38:D9:ED:55 # atc_hall
+            - A4:C1:38:03:30:E5 # atc_bedroom
 
 triggers:
   - alert:
