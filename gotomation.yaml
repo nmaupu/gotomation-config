@@ -141,6 +141,9 @@ modules:
       interval: 2h
       blacklist: []
       whitelist:
+        - gateway: OMG_basement
+          macs:
+            - A4:C1:38
         - gateway: OMG_living
           macs:
             - A4:C1:38:58:57:8D # atc_networkbox
