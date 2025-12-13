@@ -76,18 +76,17 @@ modules:
         - sensor.atc_basement_cave_temp
         - sensor.atc_hall_temp
         - sensor.atc_bedroom_temp
+        - sensor_atc_kitchen_temp
+        - sensor_atc_living_temp
   - freshnessChecker:
       name: zigbee_temp_sensors
       interval: 12h
       freshness: 6h
       sender: telegram
       entities:
-        - sensor.dehumidifier_water_sensor_last_seen
         - sensor.kitchen_fridge_up_hum_temp_last_seen
         - sensor.outside_hum_temp_last_seen
         - sensor.z03mmc_kitchen_fridge_down_hum_temp_last_seen
-        - sensor.z03mmc_kitchen_hum_temp_last_seen
-        - sensor.z03mmc_living_hum_temp_last_seen
       template: |
         Les sensors Zigbee suivants n'ont pas donné de nouvelles depuis plus de {{ .Checker.Freshness }}:
         {{ JoinEntities .Entities "\n" "_last_seen" }}
@@ -122,9 +121,9 @@ modules:
           temp_threshold: 23
         - entity: sensor.z03mmc_kitchen_fridge_down_hum_temp_temperature
           temp_threshold: 9
-        - entity: sensor.z03mmc_kitchen_hum_temp_temperature
+        - entity: sensor.atc_kitchen_temp
           temp_threshold: 23
-        - entity: sensor.z03mmc_living_hum_temp_temperature
+        - entity: sensor.atc_living_temp
           temp_threshold: 23
         - entity: sensor.atc_networkbox_temp
           temp_threshold: 36
