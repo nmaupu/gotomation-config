@@ -78,6 +78,9 @@ modules:
         - sensor.atc_bedroom_temp
         - sensor_atc_kitchen_temp
         - sensor_atc_living_temp
+      template: |
+        Les sensors Zigbee suivants n'ont pas donné de nouvelles depuis plus de {{ .Checker.Freshness }}:
+        {{ JoinEntities .Entities "\n" "_last_seen" }}
   - freshnessChecker:
       name: zigbee_temp_sensors
       interval: 12h
@@ -88,8 +91,8 @@ modules:
         - sensor.outside_hum_temp_last_seen
         - sensor.z03mmc_kitchen_fridge_down_hum_temp_last_seen
       template: |
-        Les sensors Zigbee suivants n'ont pas donné de nouvelles depuis plus de {{ .Checker.Freshness }}:
-        {{ JoinEntities .Entities "\n" "_last_seen" }}
+        Les sensors ATC suivants n'ont pas donné de nouvelles depuis plus de {{ .Checker.Freshness }}:
+        {{ JoinEntities .Entities }}
   - freshnessChecker:
       name: zigbee_dehum_water_sensor
       interval: 60m
