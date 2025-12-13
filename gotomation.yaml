@@ -152,6 +152,7 @@ modules:
             - A4:C1:38:D9:ED:55 # ATC_hall
             - A4:C1:38:03:30:E5 # ATC_bedroom
             - A4:C1:38:F4:32:F6 # ATC_kitchen
+            - A4:C1:38:52:25:BA # ATC_living
         - gateway: OMG_living
           macs:
             - A4:C1:38:58:57:8D # ATC_networkbox
@@ -163,6 +164,7 @@ modules:
             - A4:C1:38:D9:ED:55 # ATC_hall
             - A4:C1:38:03:30:E5 # ATC_bedroom
             - A4:C1:38:F4:32:F6 # ATC_kitchen
+            - A4:C1:38:52:25:BA # ATC_living
         - gateway: OMG_hall
           macs:
             - A4:C1:38:58:57:8D # ATC_networkbox
@@ -174,6 +176,7 @@ modules:
             - A4:C1:38:D9:ED:55 # ATC_hall
             - A4:C1:38:03:30:E5 # ATC_bedroom
             - A4:C1:38:F4:32:F6 # ATC_kitchen
+            - A4:C1:38:52:25:BA # ATC_living
 
 triggers:
   - alert:
