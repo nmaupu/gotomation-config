@@ -143,34 +143,37 @@ modules:
       whitelist:
         - gateway: OMG_basement
           macs:
-            - A4:C1:38:58:57:8D # atc_networkbox
-            - A4:C1:38:EC:25:33 # atc_test
-            - A4:C1:38:C3:A0:50 # atc_blue
-            - A4:C1:38:DB:BC:6F # atc_pink
-            - A4:C1:38:8E:3C:AE # atc_basement_bdr
-            - A4:C1:38:00:C6:9D # atc_basement_cave
-            - A4:C1:38:D9:ED:55 # atc_hall
-            - A4:C1:38:03:30:E5 # atc_bedroom
+            - A4:C1:38:58:57:8D # ATC_networkbox
+            - A4:C1:38:EC:25:33 # ATC_test
+            - A4:C1:38:C3:A0:50 # ATC_blue
+            - A4:C1:38:DB:BC:6F # ATC_pink
+            - A4:C1:38:8E:3C:AE # ATC_basement_bdr
+            - A4:C1:38:00:C6:9D # ATC_basement_cave
+            - A4:C1:38:D9:ED:55 # ATC_hall
+            - A4:C1:38:03:30:E5 # ATC_bedroom
+            - A4:C1:38:F4:32:F6 # ATC_kitchen
         - gateway: OMG_living
           macs:
-            - A4:C1:38:58:57:8D # atc_networkbox
-            - A4:C1:38:EC:25:33 # atc_test
-            - A4:C1:38:C3:A0:50 # atc_blue
-            - A4:C1:38:DB:BC:6F # atc_pink
-            - A4:C1:38:8E:3C:AE # atc_basement_bdr
-            - A4:C1:38:00:C6:9D # atc_basement_cave
-            - A4:C1:38:D9:ED:55 # atc_hall
-            - A4:C1:38:03:30:E5 # atc_bedroom
+            - A4:C1:38:58:57:8D # ATC_networkbox
+            - A4:C1:38:EC:25:33 # ATC_test
+            - A4:C1:38:C3:A0:50 # ATC_blue
+            - A4:C1:38:DB:BC:6F # ATC_pink
+            - A4:C1:38:8E:3C:AE # ATC_basement_bdr
+            - A4:C1:38:00:C6:9D # ATC_basement_cave
+            - A4:C1:38:D9:ED:55 # ATC_hall
+            - A4:C1:38:03:30:E5 # ATC_bedroom
+            - A4:C1:38:F4:32:F6 # ATC_kitchen
         - gateway: OMG_hall
           macs:
-            - A4:C1:38:58:57:8D # atc_networkbox
-            - A4:C1:38:EC:25:33 # atc_test
-            - A4:C1:38:C3:A0:50 # atc_blue
-            - A4:C1:38:DB:BC:6F # atc_pink
-            - A4:C1:38:8E:3C:AE # atc_basement_bdr
-            - A4:C1:38:00:C6:9D # atc_basement_cave
-            - A4:C1:38:D9:ED:55 # atc_hall
-            - A4:C1:38:03:30:E5 # atc_bedroom
+            - A4:C1:38:58:57:8D # ATC_networkbox
+            - A4:C1:38:EC:25:33 # ATC_test
+            - A4:C1:38:C3:A0:50 # ATC_blue
+            - A4:C1:38:DB:BC:6F # ATC_pink
+            - A4:C1:38:8E:3C:AE # ATC_basement_bdr
+            - A4:C1:38:00:C6:9D # ATC_basement_cave
+            - A4:C1:38:D9:ED:55 # ATC_hall
+            - A4:C1:38:03:30:E5 # ATC_bedroom
+            - A4:C1:38:F4:32:F6 # ATC_kitchen
 
 triggers:
   - alert:
