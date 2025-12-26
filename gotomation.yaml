@@ -78,7 +78,6 @@ modules:
         - sensor.atc_bedroom_temp
         - sensor.atc_kitchen_temp
         - sensor.atc_living_temp
-        - sensor.atc_fridge_down_temp
       template: |
         Les sensors ATC suivants n'ont pas donné de nouvelles depuis plus de {{ .Checker.Freshness }}:
         {{ JoinEntities .Entities "\n" "_temp"}}
