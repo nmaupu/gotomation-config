@@ -17,7 +17,7 @@ schedules:
       eco: 18
     - beg: 18:00:00
       end: 23:30:00
-      comfort: 21
+      comfort: 20.5
       eco: 18
 
   weekend:
@@ -35,5 +35,5 @@ schedules:
       eco: 19
     - beg: 19:00:00
       end: 23:30:00
-      comfort: 21
+      comfort: 20.5
       eco: 18
