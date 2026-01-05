@@ -122,6 +122,8 @@ modules:
           temp_threshold: 24
         - entity: sensor.atc_hall_temp
           temp_threshold: 23
+        - entity: sensor.atc_fridge_down_temp
+          temp_threshold: 9
         - entity: sensor.atc_kitchen_temp
           temp_threshold: 23
         - entity: sensor.atc_living_temp
