@@ -280,7 +280,7 @@ triggers:
             - {entity: light.dressing_switch, service: turn_off}
             - {delay: 250ms}
             - {entity: light.entree_switch, service: turn_off}
-        - key: Select
+        - key: Home
           only_dark: true
           commands:
             # Movies
@@ -319,9 +319,6 @@ triggers:
         - key: Info
           commands:
             - {entity: light.poutre_dimmer, service: turn_on, brightness: 255}
-        - key: Home
-          commands:
-            - {entity: light.table_dimmer, service: turn_on, brightness: 255}
         - key: InstantReplay
           commands:
             - {entity: light.table_dimmer, service: turn_off}
