@@ -78,7 +78,6 @@ modules:
         - sensor.atc_bedroom_temp
         - sensor.atc_kitchen_temp
         - sensor.atc_living_temp
-        - sensor.atc_fridge_down_temp
       template: |
         Les sensors ATC suivants n'ont pas donné de nouvelles depuis plus de {{ .Checker.Freshness }}:
         {{ JoinEntities .Entities "\n" "_temp"}}
@@ -122,8 +121,6 @@ modules:
           temp_threshold: 24
         - entity: sensor.atc_hall_temp
           temp_threshold: 23
-        - entity: sensor.atc_fridge_down_temp
-          temp_threshold: 9
         - entity: sensor.atc_kitchen_temp
           temp_threshold: 23
         - entity: sensor.atc_living_temp
@@ -155,7 +152,6 @@ modules:
             - A4:C1:38:03:30:E5 # ATC_bedroom
             - A4:C1:38:F4:32:F6 # ATC_kitchen
             - A4:C1:38:52:25:BA # ATC_living
-            - A4:C1:38:6C:32:F6 # ATC_fridge_down
         - gateway: OMG_living
           macs:
             - A4:C1:38:58:57:8D # ATC_networkbox
@@ -168,7 +164,6 @@ modules:
             - A4:C1:38:03:30:E5 # ATC_bedroom
             - A4:C1:38:F4:32:F6 # ATC_kitchen
             - A4:C1:38:52:25:BA # ATC_living
-            - A4:C1:38:6C:32:F6 # ATC_fridge_down
         - gateway: OMG_hall
           macs:
             - A4:C1:38:58:57:8D # ATC_networkbox
@@ -181,7 +176,6 @@ modules:
             - A4:C1:38:03:30:E5 # ATC_bedroom
             - A4:C1:38:F4:32:F6 # ATC_kitchen
             - A4:C1:38:52:25:BA # ATC_living
-            - A4:C1:38:6C:32:F6 # ATC_fridge_down
 
 triggers:
   - alert:
